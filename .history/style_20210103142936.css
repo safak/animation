@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.container {
+  background-color: lightsalmon;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  font-size: 50px;
+}
+
+.text:hover {
+  color: lightcyan;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+}
+
+.button:disabled {
+  color: white;
+  cursor: not-allowed;
+}
+
+.input {
+  width: 150px;
+  height: 50px;
+}
+
+.input:focus{
+    background-color: red;
+}
