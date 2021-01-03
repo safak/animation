@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.container {
+  background-color: lightsalmon;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1{
+  position: relative;
+}
+
+h1::before{
+  content: "add before";
+  color: aliceblue;
+}
+
+
+h1::after{
+  content: "add after";
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+}
