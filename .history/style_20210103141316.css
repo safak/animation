@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    background-color: lightsalmon;
+    height: 100%;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    border: 1p solid white;
+}
