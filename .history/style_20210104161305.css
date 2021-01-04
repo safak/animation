@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 100px;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.container1 {
+  background-color: lightsalmon;
+  z-index: 1;
+}
+
+.container2 {
+  background-color: lightseagreen;
+  z-index: 3;
+}
+
+.container3 {
+  background-color: lightskyblue;
+  z-index: 2;
+}
+
+.container:hover {
+  transform: translate3d(0px, 0px, 30px);
+}

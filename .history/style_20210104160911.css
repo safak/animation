@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.container {
+  background-color: lightsalmon;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: all 2s ease;
+  transform-style: preserve-3d;
+}
+
+.container:hover {
+  transform: translate3d(0px, 0px, 30px);
+}
