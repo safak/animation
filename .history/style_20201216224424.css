@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 1px solid #1976d2;
+  border-radius: 50%;
+  /* opacity: 0; */
+  transition: all ease 1s;
+}
+
+.circle2 {
+  width: 90%;
+  height: 90%;
+  border-width: 2px;
+}
+
+.circle3 {
+  width: 75%;
+  height: 75%;
+  border: 3px dotted #f9514c;
+}
+
+img {
+  width: 50%;
+}
+
+.facebook:hover .circle {
+  opacity: 1;
+}
