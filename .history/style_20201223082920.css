@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.button {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://images.pexels.com/photos/5656747/pexels-photo-5656747.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: 100%;
+}
+
+.hover {
+  transition: transform 1s, opacity 2s ease;
+}
+
+.yeah {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.button:hover {
+  background-size: 110%;
+}
+
+.button:hover .hover {
+  transform: scale(3);
+  opacity: 0;
+}
+
+.button:hover .yeah {
+  opacity: 1;
+}

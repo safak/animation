@@ -1,0 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.button {
+  background: url("https://images.pexels.com/photos/5656747/pexels-photo-5656747.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") center center;
+}
