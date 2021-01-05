@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: lightcoral;
+}
+
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.line-container.active .line-1 {
+  transform: translate(0px, 13px) rotate(45deg);
+}
+
+.line-container.active .line-2 {
+  opacity: 0;
+}
+
+.line-container.active .line-3 {
+  transform: translate(0px, -13px) rotate(-45deg);
+}

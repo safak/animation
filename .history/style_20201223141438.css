@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.line{
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}

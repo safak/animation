@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 20px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.line-container {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.line-container.active .line-1 {
+  transform: rotate(45deg);
+}
+
+.line-container.active .line-2 {
+  opacity: 0;
+}
+
+.line-container.active .line-3 {
+}

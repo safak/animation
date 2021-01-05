@@ -1,0 +1,25 @@
+* {
+  padding: 0px;
+  margin: 10px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.line-container {
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.line-container:active{
+  background-color: blanchedalmond;
+}
