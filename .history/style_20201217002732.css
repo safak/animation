@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGE1
+
+h1{
+  color: coral;
+}
+
+.circle-container {
+  display: flex;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  animation: loading 1s infinite;
+  opacity: 0;
+}
+
+.circle-1{
+  background-color: tomato;
+}
+
+.circle-2{
+  background-color: salmon;
+}
+
+.circle-3{
+  background-color: coral;
+}
+
+@keyframes loading {
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* PAGE2
+
+h1 {
+  color: coral;
+}
+
+.circle-container {
+  display: flex;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  animation: loading .5s infinite alternate;
+}
+
+.circle-1 {
+  background-color: tomato;
+}
+
+.circle-2 {
+  background-color: salmon;
+}
+
+.circle-3 {
+  background-color: coral;
+}
+
+@keyframes loading {
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  75% {
+    transform: translate(30px, -10px);
+  }
+  100% {
+    transform: translate(30px, 0px);
+  }
+} */
+
+/* PAGE3
+
+h1 {
+  color: coral;
+  font-weight: 300;
+  margin-top: ;
+}
+
+.circle-container {
+  display: flex;
+  border-bottom: 2px solid lightcoral;
+  padding: 0px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  animation: loading 0.5s infinite alternate;
+}
+
+.circle-1 {
+  background-color: tomato;
+}
+
+.circle-2 {
+  background-color: salmon;
+  animation-delay: 0.1s;
+}
+
+.circle-3 {
+  background-color: coral;
+  animation-delay: .2s;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateY(-100px);
+  }
+} */
+
+/* PAGE3 */
+
+/* .container {
+  width: 550px;
+  border: 1px solid #333;
+  position: relative;
+  overflow: hidden;
+} */
+
+h1 {
+  font-size: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  z-index: 1;
+  color: transparent;
+}
+
+.fill {
+  position: absolute;
+  /* left: -100%; */
+  width: 100%;
+  height: 200px;
+  background-color: coral;
+  z-index: 0;
+}
