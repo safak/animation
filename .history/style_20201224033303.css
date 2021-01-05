@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 100px;
+  color: slateblue;
+}
+
+.drop{
+  width: 20px;
+  height: 20px;
+  clip-path: ellipse(25% 40% at 50% 50%);
+  background-color: red;
+}

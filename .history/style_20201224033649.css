@@ -1,0 +1,32 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 100px;
+  color: slateblue;
+}
+
+.container {
+  position: relative;
+}
+
+.drop {
+  width: 25px;
+  height: 25px;
+  clip-path: ellipse(25% 40% at 50% 50%);
+  background-color: slateblue;
+  position: absolute;
+  bottom: 30px;
+  left: 1px;
+  transition: 3s cubic-bezier(.17,.67,.83,-0.13);
+}
