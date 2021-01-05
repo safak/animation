@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightyellow;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(78, 103, 212);
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightyellow;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
