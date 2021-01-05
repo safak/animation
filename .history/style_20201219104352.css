@@ -1,0 +1,23 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.button{
+  width: 200px;
+  height: 100px;
+  transform: rotateX(60deg) scale(0.7);
+  background-color: coral;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

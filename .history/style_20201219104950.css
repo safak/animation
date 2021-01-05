@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  perspective: 1000px;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+  transform: rotateX(60deg);
+  border-radius: 10px;
+  border: 1px solid #333333;
+  background-color: lightpink;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(102, 9, 102);
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px;
+}

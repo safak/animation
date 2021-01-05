@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  perspective: 1000px;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+  transform: rotateX(60deg);
+  border-radius: 10px;
+  border: 1px solid #333333;
+  background-color: lightpink;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: -20px;
+  background-color: rgb(247, 167, 180);
+  border: inherit;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.button:hover {
+  transform: rotateX(60deg) translateY(10px);
+}
+
+.button:hover.button::before {
+  height: 10px;
+}
