@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightgray;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  clip-path: circle(10% at 50% 50%);
+  background-color: aqua;
+}

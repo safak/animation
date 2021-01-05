@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.video {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 120px;
+  transition: all 1s ease;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container{
+  background-color: yellowgreen;
+  width: max-content;
+  margin-left: 10px;
+}
+
+h3 {
+  position: relative;
+  left: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+h3::before {
+  content: "WATCH THE VIDEO";
+  position: absolute;
+  color: white;
+  width: 0%;
+}
+
+.container:hover .video {
+  transform: scale(3.5);
+}
