@@ -1,0 +1,32 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.circle{
+  /* background-color: limegreen; */
+}
+
+.phone{
+  width: 60px;
+  height: 60px;
+  background-color: limegreen;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.icon{
+  transform: rotate(10deg);
+}

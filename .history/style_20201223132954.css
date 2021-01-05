@@ -1,0 +1,23 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.circle{
+  background-color: limegreen;
+}
+
+.phone{
+  width: 50px;
+  height: 50px;
+  background-color: limegreen;
+}
