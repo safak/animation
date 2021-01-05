@@ -1,0 +1,18 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightblue;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  transform: rotate(-25deg) skew(25deg);
+  transform-style: preserve-3d;
+}
