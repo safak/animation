@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: lightslategrey;
+  border: 5px solid lightslategrey;
+
+}

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: lightslategrey;
+  border: 5px solid lightslategrey;
+}
+
+.box::before {
+  content: "POSEIDON";
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box::after{
+  content:"";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+
+}
