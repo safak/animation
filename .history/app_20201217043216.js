@@ -1,0 +1,1 @@
+const path = document.querySelector("path")

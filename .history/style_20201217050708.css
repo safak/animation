@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(92, 92, 250);
+  position: relative;
+}
+
+.visa-logo {
+  width: 100px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.info {
+  margin-top: 100px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.chip {
+  width: 50px;
+}
+
+.number{
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+.date-container{
+  display: flex;
+  margin-right: 50px;
+}
+
+.valid-date{
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.valid-date-text{
+  white-space: nowrap;
+}

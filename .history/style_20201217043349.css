@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+path {
+  stroke-dasharray: 2222;
+  animation: draw 2s forwards;
+}
+
+@keyframes draw {
+
+}

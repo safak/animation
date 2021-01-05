@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.visa-logo{
+  width: 100px;
+  background-color: white;
+}
