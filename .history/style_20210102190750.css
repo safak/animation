@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: lightblue; */
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.interactive-container {
+  width: 150px;
+  height: 100px;
+  background-color: lightcoral;
+  position: relative;
+  overflow: hidden;
+}
+
+.person {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(247, 234, 62);
+  position: relative;
+}
+
+.eyes {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 10;
+  left: 12.5px;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 1.2s ease-in;
+}
+
+.eye {
+  width: 6px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.mouth {
+  width: 35px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 0 0 60px 60px;
+  position: absolute;
+  top: 25px;
+  left: 7.5px;
+  transition: transform 1.2s ease-in;
+}
+
+.mouth-surprised {
+  width: 10px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.smiling-person{
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  transition: transform 1s ease;
+}
+
+.smiling-person{
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  transition: transform 1s ease;
+  z-index: 1;
+}
+
+.surprised-person{
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  transition: transform 1s ease;
+}
+
+.box {
+  clip-path: polygon(
+    0% 50%,
+    0% 100%,
+    100% 100%,
+    100% 50%,
+    50% 50%,
+    0% 30%,
+    10% 50%
+  );
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 12px;
+  left: 52px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.dots {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: .5s;
+}
+
+.text-container{
+  width: 250px;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:hover .smiling-person{
+  transform: translate(-50px, -25px);
+}
+
+.container:hover .smiling-person .eyes{
+  transform: translateX(5px);
+}
+
+.container:hover .smiling-person .mouth{
+  transform: translateX(5px);
+}
+
+.container:hover .surprised-person{
+  transform: translate(-50px, -50px);
+}
+
+.container:hover .box{
+  opacity: 1;
+}
+
+.container:hover .dots{
+  opacity: 1;
+}

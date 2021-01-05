@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightblue;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: lightslategray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

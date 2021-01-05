@@ -1,0 +1,57 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightblue;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: lightslategray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.box {
+  position: absolute;
+  transition: all 2s ease;
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: lightyellow;
+}
+
+.box2 {
+  background-color: lightcoral;
+}
+
+.box3 {
+  background-color: lightseagreen;
+}
+
+.container:hover .box1 {
+  transform: translateX(50px) translateZ(20px)
+    rotateX(10deg) rotateY(10deg) rotateZ(20deg);
+}
+
+.container:hover .box2 {
+  transform: translateX(100px) translateZ(20px)
+    rotateX(10deg) rotateY(10deg) rotateZ(20deg);
+}
+
+.container:hover .box3 {
+  transform: translateX(150px) translateZ(20px)
+    rotateX(10deg) rotateY(10deg) rotateZ(20deg);
+}

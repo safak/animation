@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightblue;
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  clip-path: polygon(
+    0% 50%,
+    0% 100%,
+    100% 100%,
+    100% 50%,
+    50% 50%,
+    0% 30%,
+    10% 50%
+  );
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.dots {
+  z-index: 2;
+  font-weight: 100;
+  font-size: 20px;
+}

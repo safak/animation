@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightblue;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: lightslategray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: absolute;
+  transition: all 2s ease;
+}
+
+.box1 {
+  width: 250px;
+  height: 250px;
+  background-color: lavender;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+.box3 {
+  width: 150px;
+  height: 150px;
+  background-color: lightseagreen;
+}
+
+.container:hover .box {
+  transform: perspective(1000px) translateX(20px) translateZ(20px)
+    rotateX(50deg);
+}
