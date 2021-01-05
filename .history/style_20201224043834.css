@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 100px;
+  color: slateblue;
+}
+
+.container {
+  position: relative;
+}
+
+.drop {
+  width: 27px;
+  height: 25px;
+  clip-path: ellipse(25% 40% at 50% 50%);
+  background-color: slateblue;
+  position: absolute;
+  bottom: 60px;
+  
+  animation: move 3s cubic-bezier(.05,.34,1,-0.19) infinite;
+}
+
+@keyframes move{
+  to{
+    transform: translateY(300px);
+  }
+}

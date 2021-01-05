@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.row-top{
+  display: flex;
+  align-items: baseline;
+}
+
+.title{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 5px;  
+}
+
+.dot{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.desc{
+  color: lightgray;
+  font-weight: 100;
+}

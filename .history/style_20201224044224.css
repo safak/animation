@@ -1,0 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #444444;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  color: white;
+}
+
+.desc{
+  color: gray;
+}

@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-top {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  overflow: hidden;
+}
+
+.row-top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: gold;
+  animation: moveTopBox 2s cubic-bezier(0, 0.5, 0, 0.5) forwards;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 5px;
+  opacity: 0;
+  animation: moveTitle 2s 2s ease forwards;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: gold;
+  animation: moveDot 1s 2s alternate forwards;
+}
+
+.row-bottom {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  width: max-content;
+}
+
+.row-bottom::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  animation: moveBottomBox 1s forwards;
+}
+
+.desc {
+  color: lightgray;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+@keyframes moveTopBox {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveTitle {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveDot {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
