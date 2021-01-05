@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}

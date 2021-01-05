@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+img{
+  transition: all 2s ease;
+  /* animation: like 2s linear; */
+  transform: rotateX(100px);
+  cursor: pointer;
+}

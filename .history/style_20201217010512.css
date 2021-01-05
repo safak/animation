@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 0;
+}
+
+img{
+  transition: all .1s ease-in-out;
+  /* animation: like 2s linear; */
+  cursor: pointer;
+}
+
+.container:hover img{
+  transform: translateX(-2000px);
+}

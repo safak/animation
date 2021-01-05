@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  animation: beat 1s linear infinite;
+}
+
+@keyframes beat{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
