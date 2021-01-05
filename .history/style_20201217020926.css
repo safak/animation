@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  outline: none;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  position: relative;
+}
+
+.button-1 {
+  background-color: black;
+}
+
+.button-1:hover.button-1::before {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  content: "JOKING!";
+  font-weight: bold;
+  background-color: rgb(231, 69, 69);
+  animation: retrive 1s alternate infinite;
+  overflow: hidden;
+}
+
+.button-1:hover.button-1::after {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  content: "DON'T WORRY!";
+  font-weight: bold;
+  background-color: rgb(113, 66, 122);
+  animation: retrive 1s alternate infinite;
+  animation-delay: 1s;
+  overflow: hidden;
+}
+
+@keyframes retrive {
+  to {
+    height: 100%;
+  }
+}
+
+.button-2 {
+  background-color: #444444;
+}
+
+.button-2:hover {
+  
+}
+
+.button-2:hover.button-2::before {
+  content: "Light Side";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  background-color:#999999
+  color: #444444;
+  animation: retrive 1s alternate infinite;
+  animation-delay: 1s;
+  overflow: hidden;
+}

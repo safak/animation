@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-1 {
+  background-color: lightcoral;
+}
+
+.button-1::after{
+  content: "asd";
+}

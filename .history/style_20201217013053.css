@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+button{
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 100px;
+}
