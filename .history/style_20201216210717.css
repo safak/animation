@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+}
+
+h1 {
+  font-size: 150px;
+  font-weight: 800;
+  position: absolute;
+}
+
+.text {
+  color: lightgray;
+  text-shadow: -3px -3px 0 #000000, 3px -3px 0 #000000, -3px 3px 0 #000000,
+    3px 3px 0 #000000;
+}
+
+.text-liquid {
+  display: none;
+}
