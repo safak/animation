@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: beige;
+}
+
+h1 {
+  font-size: 150px;
+  font-weight: 800;
+  position: relative;
+  /* color: cadetblue; */
+  color: beige;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h1::before {
+  content: "WEB DESIGN";
+  color: cadetblue;
+  text-shadow: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

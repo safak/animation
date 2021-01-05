@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: lightslategray;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 800;
+  position: relative;
+  /* color: cadetblue; */
+  color: lightslategray;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+h1::before {
+  content: "WEB DESIGN";
+  color: cadetblue;
+  text-shadow: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 20px solid cadetblue;
+  width: 0;
+  /* height: 170px; */
+  overflow: hidden;
+  animation: moveText 3s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}

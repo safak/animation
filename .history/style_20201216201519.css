@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: beige;
+}
+
+h1{
+    font-size: 150px;
+    font-weight: 800;
+    color: cadetblue;
+}

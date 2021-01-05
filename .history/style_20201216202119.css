@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: beige;
+}
+
+h1 {
+  font-size: 150px;
+  font-weight: 800;
+  /* color: cadetblue; */
+  color: beige;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h1::before {
+  content: ;
+}
