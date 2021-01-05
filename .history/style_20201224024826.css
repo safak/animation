@@ -1,0 +1,14 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url("https://images.pexels.com/photos/2259233/pexels-photo-2259233.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
