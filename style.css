@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(94, 23, 98, 1) 73%,
+    rgba(138, 82, 141, 1) 100%
+  );
+  position: relative;
+  perspective: 100px;
+  overflow: hidden;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(246, 255, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 255, 0, 1) 0%,
+    rgba(169, 0, 46, 1) 73%,
+    rgba(99, 0, 16, 1) 100%
+  );
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  animation: sun 1s alternate infinite;
+}
+
+@keyframes sun {
+  from {
+    box-shadow: 0 0 50px tomato;
+  }
+  to {
+    box-shadow: 0 0 50px gold;
+  }
+}
+
+.mountain {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  clip-path: polygon(
+    0% 100%,
+    4% 85%,
+    10% 74%,
+    19% 62%,
+    28% 41%,
+    41% 30%,
+    50% 30%,
+    61% 28%,
+    67% 36%,
+    73% 45%,
+    81% 59%,
+    98% 80%,
+    100% 100%
+  );
+  position: absolute;
+  bottom: 30vh;
+  right: -300px;
+  animation: mountain 5s linear infinite;
+}
+
+@keyframes mountain {
+  to {
+    transform: translateX(-2000px);
+  }
+}
+
+.road {
+  width: 500%;
+  height: 50%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  background-image: url("grid.png");
+  background-position: top;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+  animation: road 1s linear infinite;
+}
+
+@keyframes road {
+  to {
+    transform: rotateX(90deg) translateX(-240px);
+  }
+}
+
+img {
+  width: 300px;
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+  animation: car 0.2s alternate infinite;
+}
+
+@keyframes car {
+  to {
+    transform: translateY(1px);
+  }
+}
